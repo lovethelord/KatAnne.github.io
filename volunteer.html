@@ -1,0 +1,172 @@
+<!DOCTYPE html> 	
+<html lang="en"> 	
+
+<head> 
+	
+	
+	<meta charset="utf-8" /> 
+	<meta name="author" content="Katie Williams">
+	<meta name="keywords" content="Phipps Conservatory, Botanical Garden, plants">
+	<meta name="description" content="Phipps Conservatory College Student Website">
+
+	<!-- Link to CSS -->
+	<link href="css/styles.css" rel="stylesheet" media = "all" type="text/css" />
+	<link rel="stylesheet" href="css/jquery-ui.css" />
+	<link rel="stylesheet" href=css/jquery.lightboxclone-0.6.css />
+	
+	<!-- Link to JS-->	
+	<script src="js/jquery-2.1.3.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/jquery.lightbox-0.5.js"></script>
+	
+	<!-- JS for tabs-->	
+	<script>
+	    $(function() {
+	      $( "#tabs" ).tabs({
+	        event: "mouseover"
+	      });
+	    });
+	 </script>
+		
+		<!-- CSS to have tabs go below fixed header-->	
+		<style type="text/css">
+	   .ui-tabs {
+	       position: static;
+	   }
+	   .ui-tabs .ui-tabs-nav LI {
+	       position: static;
+	   }
+	</style>
+		
+	
+	<title>Phipps Conservatory</title>
+	
+</head>
+    
+<body>
+	<div id="container">
+		
+		<div id="top_row">
+	
+		<header>
+			<img src="images/logo2.jpg" alt="Phipps Logo" />
+		</header>
+		
+		<nav>
+			<a href="index.html">HOME</a> 
+			<a href="explore.html">EXPLORE</a> 
+			<a href="visit.html">VISIT</a> 
+			<a class="selected" href="volunteer.html">VOLUNTEER</a> 
+		</nav>
+	</div>
+</div>
+		
+		<div id="content">
+			
+			<div id="volunteer">
+			
+			<h4>Volunteer At Phipps</h4>
+			
+			<p>Phipps is well known for our beautiful gardens, seasonal flower shows, pioneering sustainability initiatives, and compelling community education and outreach programs, but what many people may not realize is that none of these activities would be possible without the contributions of our dedicated volunteers—people just like you who share their passion, talents and expertise to help us carry out our work every single day.If you, too, possess a strong interest in lending a hand at Phipps, a volunteer position in one of our many program areas may be the perfect fit for you. Whether you are helping out at a special event or in our greenhouses, volunteering with us is not only a great way to meet likeminded people, but it also provides a unique opportunity for you to advance the mission of one of Pittsburgh's most beloved local resources and landmarks.<p><br/>
+				<div id="buttonSmall">
+					<a href="#moreInfo"><em>Want to Learn More?</em></a> 
+				</div>
+			</div>
+			
+	  	  <div id="tabs">
+	  		  <ul>
+	  		  		<li><a href="#tabs-1">EXPERIENCE</a></li>
+	  		  		<li><a href="#tabs-2">COMMUNITY</a></li>
+	  		  		<li><a href="#tabs-3">THE WORK</a></li>
+	  		  	</ul>
+			  
+	  		  	<div id="tabs-1">
+				<img src="images/volunteer1.jpg" alt="Photo"  height = "100"/>
+	  		  <p>"Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante." <br/><br/>
+			  - Jane Doe </p>
+	  		  	</div>
+				
+	  		  	<div id="tabs-2">
+				<img src="images/volunteer2.jpg" alt="Photo"  height = "100"/>
+	  		  <p>"Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem."<br/><br/>
+			  - John Doe </p>
+	  		  	</div>
+				 
+	  		  	<div id="tabs-3">
+					<img src="images/volunteer3.jpg" alt="Photo" height = "100" /><p>"Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem." </p><br/><br/>
+			  - Sally Doe
+	  		  	</div>
+	  		  </div>
+			  
+			 <div id="banner_image"> 
+			 <img src="images/garden.jpg" alt="Photo"> 
+			</div>
+			
+			<div id="moreInfo">
+			<div id="caption">
+			<p>FOR MORE INFORMATION</p><br/><br/>
+			<p>Refer to these links:</p><br/><br/>
+				<a href="https://phipps.conservatory.org/volunteer">Phipps Volunteer FAQs and Opportunities</a><br/>
+				<a href="https://www.google.com/search?q=volunteering+at+phipps&ie=utf-8&oe=utf-8">Being a Volunteer at Phipps</a><br/><br/>
+			<p>OR</p><br/><br/>
+			<p>Fill out the form below to contact us and receive more information about Phipps Conservatory:</p> <br/><br/>
+			
+			</div>
+		</div>
+		
+			<div id="ContactForm">
+				
+			<div id ="contactThumbnail"><div id="contactShadow">
+				<form action="mailto:generalinformation@pc.org" enctype="text/plain" method="post">
+	
+				<fieldset>
+					<legend align="center">Tell us about yourself</legend>
+					<label for="uname">*Name: </label>
+					<input type="text" name="uname" id="uname" value = "" size="20" maxlength="250" placeholder="Your Name" required/><br/><br/>
+		
+					<label for="zipcode">Zip Code: </label>
+					<input type="text" name="zipcode" id="zipcode" value="" size="5" maxlength="5" minlength="5" placeholder="#####"><br/><br/>
+					
+					<label for="email">*Email Address: </label>
+					<input type="email" id="email" name="email" value="" size="20" maxlength="250" placeholder="abc@defg.com" required><br/><br/>
+					
+					<div id="required">
+					(*Required)
+				</div>
+				</fieldset>
+	
+				<fieldset>
+					<legend align="center">@ Phipps</legend>	
+					<label for="flower">Your favorite flower color:</label> <br>
+						<input type="color" name="flower" id="flower" value = "Your favorite flower color"> <br/><br/>
+					
+					<label>Would you like to subscibe to our Monthly Newsletter? :</label><br/>
+					<input type="checkbox" id="signup" name="signup" value="yes">Yes, sign me up!<br/><br/>
+		
+					<label for="message">How do you hope to be involved?</label><br/>
+					<textarea id="message" name="message" placeholder="Type your Message Here..." rows="10" cols="50" maxlength="1000"> </textarea> <br/><br/>
+				</fieldset>
+				
+				<fieldset>
+				<input type="submit" name="Submit" value="Submit">
+			</fieldset>
+	
+				</form>
+			</div></div>
+			
+			</div>
+			
+		</div>
+		
+		<div id = "bottom">
+			<a href="#moreInfo">SUBSCRIBE</a>   |   CONTACT US:	<a href="https://www.facebook.com/phippsconservatory" target="_blank"><img src="images/Facebook.png" height = "35" width = "35"></a> <a href="https://twitter.com/phippsnews" target="_blank"><img src="images/Twitter.png" height = "35" width = "35"></a> <a href="https://www.youtube.com/user/phippsconservatory" target="_blank"><img src="images/YouTube.png" height = "35" width = "35"></a> <a href="https://instagram.com/phippsconservatory/" target="_blank"><img src="images/Instagram.png" height = "35" width = "35"></a> <a href="https://www.flickr.com/photos/phippsconservatory/" target="_blank"><img src="images/Flickr.png" height = "35" width = "35"></a>  <a href="https://www.pinterest.com/phippsisgreen/" target="_blank"><img src="images/Pinterest.png" height = "35" width = "35"></a></p>
+		</div>
+		
+		<footer>
+			&copy; Katie Williams 2015
+		</footer>
+
+</div>
+</body>
+
+</html>
